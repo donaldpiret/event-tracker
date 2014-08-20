@@ -3,6 +3,7 @@
 .bundle
 .config
 coverage
+spec/dummy/log/*.log
 InstalledFiles
 lib/bundler/man
 pkg
