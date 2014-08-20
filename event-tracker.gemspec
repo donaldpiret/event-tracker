@@ -12,18 +12,18 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/donaldpiret/event-tracker'
   s.license     = 'MIT'
 
-  s.files            = %w(LICENSE README.md) + Dir['lib/**/*.rb'] + Dir['lib/**/*.sh'] + Dir['bin/*']
+  s.files            = %w(MIT-LICENSE README.rdoc) + Dir['lib/**/*.rb'] + Dir['lib/**/*.sh'] + Dir['bin/*']
   s.executables      = Dir['bin/*'].map { |f| File.basename f }
   s.test_files       = Dir['spec/**/*_spec.rb']
 
   s.required_ruby_version = '>= 1.9.3'
 
-  s.add_dependency 'analytics-ruby', '~> 2.0.6'
-  s.add_dependency 'activesupport'
-  s.add_dependency 'rails', '>= 3.0.0', '<= 5.0.0'
+  s.add_dependency 'analytics-ruby', '~> 2.0'
+  s.add_dependency 'activesupport', '>= 3.0', '<= 5.0'
+  s.add_dependency 'rails', '>= 3.0', '<= 5.0'
 
   s.add_development_dependency 'bundler', '~> 1.3'
   s.add_development_dependency 'rake', '~> 10.0'
-  s.add_development_dependency 'rspec-rails', '~> 3.0.2'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rspec-rails', '~> 3.0'
+  s.add_development_dependency 'sqlite3', '~> 1.3'
 end
