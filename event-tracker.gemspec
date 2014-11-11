@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.files            = %w(MIT-LICENSE README.rdoc) + Dir['lib/**/*.rb'] + Dir['lib/**/*.sh'] + Dir['bin/*']
   s.executables      = Dir['bin/*'].map { |f| File.basename f }
   s.test_files       = Dir['spec/**/*_spec.rb']
+  s.require_paths    = ['lib']
 
   s.required_ruby_version = '>= 1.9.3'
 
