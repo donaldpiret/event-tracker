@@ -1,4 +1,4 @@
-require 'event_tracker'
+require 'event-tracker'
 
 ActionController::Base.send(:include, EventTracker::ActionControllerExtension)
 ActionController::Base.send(:include, EventTracker::HelperMethods)

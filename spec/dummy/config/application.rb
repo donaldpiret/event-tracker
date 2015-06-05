@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "event_tracker"
+require "event-tracker"
 
 module Dummy
   class Application < Rails::Application

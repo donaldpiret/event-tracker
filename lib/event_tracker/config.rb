@@ -13,6 +13,6 @@ module EventTracker
   end
 
   def self.disabled?
-    @config.disabled == true
+    self.config.disabled == true
   end
 end

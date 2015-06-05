@@ -6,7 +6,7 @@ describe EventsController, type: :controller do
   describe '#index' do
     it 'includes the segment.io javascript in the user browser' do
       get :index
-      expect(response.body).to include('http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js"') # Invluding the JS
+      expect(response.body).to include('cdn.segment.com/analytics.js/v1/') # Invluding the JS
     end
 
     it 'identifies the user for segment.io' do
