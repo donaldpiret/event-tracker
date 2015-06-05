@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/donaldpiret/event-tracker'
   s.license     = 'MIT'
 
-  s.files            = %w(MIT-LICENSE README.rdoc) + Dir['lib/**/*.rb'] + Dir['lib/**/*.sh'] + Dir['bin/*']
+  s.files            = %w(MIT-LICENSE README.md CHANGES.md) + Dir['lib/**/*.rb'] + Dir['lib/**/*.sh'] + Dir['bin/*']
   s.executables      = Dir['bin/*'].map { |f| File.basename f }
   s.test_files       = Dir['spec/**/*_spec.rb']
   s.require_paths    = ['lib']
